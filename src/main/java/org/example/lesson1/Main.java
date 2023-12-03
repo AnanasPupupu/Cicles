@@ -1,4 +1,4 @@
-package org.example;
+package org.example.lesson1;
 
 //Вывести на экран числа от 1 до 100
 //Вывести на экран числа от 100 до 1
