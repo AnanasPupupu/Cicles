@@ -7,18 +7,16 @@ package org.example.lesson2;
  */
 public class Main {
     public static void main(String[] args) {
-        Student masha = new Student();
-        masha.name = "Маша";
-        masha.averageScore = 4.5f;
-        Student oleg = new Student();
-        oleg.name = "Олег";
-        oleg.averageScore = 3.6f;
-        Student igor = new Student();
-        igor.name = "Игорь";
-        igor.averageScore = 3.1f;
-        Teacher teacher = new Teacher();
-        teacher.name = "Александр Николаевич";
-        teacher.ocenka(teacher,oleg);
+        Student masha = new Student("Маша",4.5f);
+        masha.setName("Маша");
+        masha.setAverageScore(4.5f);
+        Student oleg = new Student("Олег",3.6f);
+        oleg.setName("Олег");
+        oleg.setAverageScore(3.6f);
+        Student igor = new Student("Игорь",3.1f);
+        igor.setName("Игорь");
+        igor.setAverageScore(3.1f);
+        Teacher teacher = new Teacher ("");
+        teacher.ocenit(teacher,igor);
     }
-
 }
