@@ -5,7 +5,11 @@ public class Student {
     private float averageScore;
 
     public Student(String name, float averageScore) {
-        this.name = name;
+            if ("".equals(name) || name == null) {
+                this.name = "студент";
+            } else {
+                this.name = name;
+            }
         this.averageScore = averageScore;
     }
 
@@ -14,8 +18,8 @@ public class Student {
     }
 
     public void setName(String name) {
-        if ("".equals(name) || name != null) {
-            System.out.println("Введите имя");
+        if ("".equals(name) || name == null) {
+            this.name = "студент";
         } else {
             this.name = name;
         }

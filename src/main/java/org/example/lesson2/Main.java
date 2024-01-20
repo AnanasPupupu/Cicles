@@ -7,16 +7,10 @@ package org.example.lesson2;
  */
 public class Main {
     public static void main(String[] args) {
-        Student masha = new Student("Маша",4.5f);
-        masha.setName("Маша");
-        masha.setAverageScore(4.5f);
+        Student masha = new Student(null,0.3f);
         Student oleg = new Student("Олег",3.6f);
-        oleg.setName("Олег");
-        oleg.setAverageScore(3.6f);
         Student igor = new Student("Игорь",3.1f);
-        igor.setName("Игорь");
-        igor.setAverageScore(3.1f);
         Teacher teacher = new Teacher ("");
-        teacher.ocenit(teacher,igor);
+        teacher.ocenit(teacher,masha);
     }
 }
