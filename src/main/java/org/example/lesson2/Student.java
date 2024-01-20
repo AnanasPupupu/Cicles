@@ -14,7 +14,7 @@ public class Student {
     }
 
     public void setName(String name) {
-        if (name.equals("")) {
+        if ("".equals(name) || name != null) {
             System.out.println("Введите имя");
         } else {
             this.name = name;
